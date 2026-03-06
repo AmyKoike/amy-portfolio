@@ -21,13 +21,21 @@ export default function AboutPage() {
       </div>
 
       <section className="mb-4 about-text">
-        <h1 className="text-center mb-3">amy koike</h1>
+        <h1 className="text-center mb-3">amy/eimi koike</h1>
+
+       <div className="about-links text-center mb-4">
+        <a href="https://twitter.com/AmyInMadison21" target="_blank">Twitter</a>
+        <span className="mx-2">•</span>
+        <a href="https://www.linkedin.com/in/amykoike/" target="_blank">LinkedIn</a>
+        <span className="mx-2">•</span>
+        <a href="/CV_AmyKoike_February2026.pdf" target="_blank">CV</a>
+      </div>
+
         <p className="lead text-center" style={{ maxWidth: "700px", margin: "0 auto" }}>
-          Artist / Researcher based in Madison, WI.
-          My work investigates the intersection of materiality,
-          motion, and everyday emotional experiences. I explore
-          organic movement through computational design, physical
-          construction, and soft expressive forms.
+          I research human-robot interaction and create expressive robots and experimental forms.
+          My work explores robot expressivity and how it creates delightful experiences between humans and robots. 
+          
+          Bridging robotics with artistic practices such as sculpture and animation, I rethink robot morphology and form factors while exploring how forms and shape languages can express meaning and facilitate visual conversations.
         </p>
       </section>
 
@@ -54,6 +62,9 @@ export default function AboutPage() {
           <li>2025 - Nature in Motion, a2ru conference, Madison USA</li>
           <li>2021 - FIKA, Koka Gallery, Tokyo JP</li>
         </ul>
+
+      
+
       </section>
 
     </main>

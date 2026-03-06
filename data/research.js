@@ -182,7 +182,7 @@ export const researchProjects = [
       "/images/art/sample2.jpg",
       "/images/art/sample3.jpg",
     ],
-    pdf: "/pdf/CV_October2025.pdf",
+    pdf: "/pdf/Mermaid.pdf",
     description: `
       In this project, we aim to combine dynamic fabrication with non-contact manipulation system applying the mechanism of Cartesian Diver. To achieve this, we propose the design method for underwater objects and non-contact manipulation technique using water pressure with PID control. We successfully designed and manipulate the object by our method. We discussed the principles and methods to create a digitally designed and fabricated the diver and to stabilize it in the middle of water.
     `,
@@ -207,7 +207,7 @@ export const researchProjects = [
       "/images/art/sample2.jpg",
       "/images/art/sample3.jpg",
     ],
-    pdf: "/pdf/CV_October2025.pdf",
+    pdf: "/pdf/You-as-Puppet.pdf",
     description: `
       We propose an immersive telepresence system for puppetry that transmits a human performer's body and facial movements into a puppet with audiovisual feedback to the performer. The cameras carried in place of puppet's eyes stream live video to the HMD worn by the performer, so that performers can see the images from the puppet's eyes with their own eyes and have a visual understanding of the puppet's ambience. In conventional methods to manipulate a puppet (a hand-puppet, a string-puppet, and a rod-puppet), there is a need to practice manipulating puppets, and there is difficulty carrying out interactions with the audience. Moreover, puppeteers must be positioned exactly where the puppet is. The proposed system addresses these issues by enabling a human performer to manipulate the puppet remotely using his or her body and facial movements. We conducted several user studies with both beginners and professional puppeteers. The results show that, unlike the conventional method, the proposed system facilitates the manipulation of puppets especially for beginners. Moreover, this system allows performers to enjoy puppetry and fascinate audiences.
     `,
@@ -230,7 +230,7 @@ export const researchProjects = [
       "/images/art/sample2.jpg",
       "/images/art/sample3.jpg",
     ],
-    pdf: "/pdf/CV_October2025.pdf",
+    pdf: "/pdf/Sonovortex.pdf",
     description: `
       In this paper, a method of rendering aerial haptics that uses an aerodynamic vortex and focused ultrasound is presented. Significant research has been conducted on haptic applications based on multiple phenomena such as magnetic and electric fields, focused ultrasound, and laser plasma. By combining multiple physical quantities; the resolution, distance, and magnitude of force are enhanced. To combine multiple tactile technologies, basic experiments on resolution and discrimination threshold are required. Separate user studies were conducted using aerodynamic and ultrasonic haptics. Moreover, the perception of their superposition, in addition to their resolution, was tested. Although these fields cause no direct interference, the system enables the simultaneous perception of the tactile feedback of both stimuli. The results of this study are expected to contribute to expanding the expression of aerial haptic displays based on several principles.
     `,
@@ -253,7 +253,7 @@ export const researchProjects = [
       "/images/art/sample2.jpg",
       "/images/art/sample3.jpg",
     ],
-    pdf: "/pdf/CV_October2025.pdf",
+    pdf: "/pdf/Cross-Field-Haptics.pdf",
     description: `
       The representation of texture is a major concern during fabrication and manufacture in many industries. Although it is easy to change the texture of objects in the digital world (i.e., just setting texture parameters), it is difficult to achieve this in the real world. Tactile feedback allows displaying texture and affordance. In conventional research, a single physical quantity is used to render haptic textures. In contrast, Our proposed system physically deforms and changes the physical force between the finger and the device. To achieve this, we combine magnetic and electrostatic fields.We use ferrofluid which is flexible liquid from the magnetic field, and electrovibration with adsorption force from the electrostatic field to develop this device.
     `,

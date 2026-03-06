@@ -22,9 +22,19 @@ export default function ResearchDetailPage({ params }) {
         <h1 className="text-4xl mb-3">{project.title}</h1>
 
         {/* author */}
-        <p className="leading-relaxed" style={{ whiteSpace: "pre-line" }}>
-          {project.author}
+        <p className="project-authors">
+          {project.author.map((author, i) => (
+            <span key={i}>
+              {author === "Amy Koike" ? (
+                <span className="author-me">{author}</span>
+              ) : (
+                <span className="author-other">{author}</span>
+              )}
+              {i < project.author.length - 1 && ", "}
+            </span>
+          ))}
         </p>
+
 
         {/* year */}
         <p className="text-muted mb-4">{project.year}</p>

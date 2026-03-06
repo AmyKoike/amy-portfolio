@@ -6,9 +6,8 @@ export default function HomePage() {
 
       {/* --- Hero Section with Illustration --- */}
       <section
-        className="d-flex justify-content-center mb-4"
-        style={{ minHeight: "20vh", paddingTop: "50px" }}
-      >
+        className="d-flex justify-content-center"
+        style={{ paddingTop: "30px", marginBottom: "0px" }}>
         <Image
           src="/home/home.png"   // ← ここをパスに合わせて!
           alt="Amy Illustration"
@@ -17,16 +16,15 @@ export default function HomePage() {
           priority
           style={{
             objectFit: "contain",
+            display: "block"
           }}
         />
       </section>
-
-
       {/* --- Artist Statement --- */}
-      <section className="container py-5" style={{ maxWidth: "800px" }}>
+      <section className="container pt-1 pb-0" style={{ maxWidth: "800px" }}>
         <p className="artist-statement text-center">
-          I build expressive systems that blur the boundary between
-          digital motion, material structure, and human perception.
+          I want my robots to make people smile. <br />
+          I love seeing people’s eyes light up when they feel inspired, <br /> and I hope the things I create can spark moments of imagination and delight.
         </p>
       </section>
 

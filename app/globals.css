@@ -153,10 +153,12 @@ h1, h2, h3, h4 {
 }
 
 .artist-statement {
+  margin-top: 0;
   font-size: 1.3rem;
   line-height: 1.7;
   font-weight: 300;
   color: #444;
+  font-style: italic;
 }
 
 .hero-section img {
@@ -266,4 +268,26 @@ h1, h2, h3, h4 {
 
 .research-note {
   text-align: left;
+}
+
+.about-note {
+  text-align: center;
+}
+
+.project-authors {
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* 自分 */
+.author-me {
+  font-weight: 600;
+  color: #000;
+}
+
+/* 共著 */
+.author-other {
+  font-weight: 300;
+  color: #777;
 }
