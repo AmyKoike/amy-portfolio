@@ -1,0 +1,269 @@
+/* body { font-family: sans-serif; } */
+
+:root {
+  --navbar-height: 70px;   /* 好きな高さに調整可能 */
+}
+
+body {
+  /* padding-top: var(--navbar-height); */
+  background-color: #f5f5f5;
+  background-image: radial-gradient(#e0e0e0 1px, transparent 1px);
+  background-size: 4px 4px;
+  font-family: var(--font-inter), sans-serif;
+  background-color: #fafafa;
+  color: #222;
+}
+
+.page-content {
+  padding-top: var(--navbar-height);
+}
+
+/* スクロール前：透明ナビ */
+/* .nav-transparent {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: white !important;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+} */
+
+.nav-transparent a {
+  color: black;
+  /* color: white !important; */
+}
+
+/* スクロール後：白背景ナビ */
+.nav-solid {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-solid a {
+  color: black !important;
+}
+
+
+.transparent-nav {
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+  transition: background-color 0.3s ease;
+}
+
+.transparent-nav a {
+  color: white !important;
+}
+
+.nav-overlay {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.nav-overlay a {
+  color: white !important; /* ← カルーセルの上で見えやすくする */
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-outfit), sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+
+.hover-card {
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.hover-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.18);
+}
+
+.masonry-grid {
+  display: flex;
+  margin-left: 0; 
+  width: auto;
+}
+
+.masonry-grid_column {
+  padding-left: 0;
+  background-clip: padding-box;
+}
+
+/* 各カード間の下余白 */
+.masonry-grid_column > * {
+  margin-bottom: 0;
+}
+
+/* ホームのナビ（カルーセル上に重ねる） */
+.navbar-hero {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  background: white;
+  color: black;
+}
+
+/* それ以外のページのナビ（通常の固定ナビ） */
+.navbar-default {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  background: white;
+  color: black;
+  border-bottom: 1px solid #eee;
+}
+
+.btn {
+  border-radius: 0px !important;   /* ← 完全に角を削る */
+}
+
+/* 好みで */
+.btn-round {
+  border-radius: 20px !important;  /* 丸い pill-style ボタン */
+}
+
+.hero-section {
+  position: relative;
+  height: 50vh;     /* ← これが全てのベース */
+  overflow: hidden;
+  /* background: red;  ← debug 用。後で消してOK */
+}
+
+.hero-slide {
+  position: relative; 
+  width: 100%;
+  height: 100%;
+}
+
+/* Hero テキスト */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-section {
+  background: #fafafa; /* or #fafafa で優しい雰囲気に */
+}
+
+.artist-statement {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  font-weight: 300;
+  color: #444;
+}
+
+.hero-section img {
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.1));
+}
+
+/* --- Art grid (square tiles) --- */
+.art-grid {
+  display: grid;
+  gap: 10px; /* 隙間。0にすれば完全にベタ詰め */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* レスポンシブ */
+@media (max-width: 992px) {
+  .art-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 576px) {
+  .art-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+/* タイル本体 */
+.art-tile {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;     /* ← 正方形 */
+  overflow: hidden;
+  background: #f3f3f3;
+  text-decoration: none;
+}
+
+/* 画像 */
+.art-tile__img {
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 240ms ease;
+}
+
+/* hover時に少しだけズーム（好みで） */
+.art-tile:hover .art-tile__img {
+  transform: scale(1.03);
+}
+
+/* タイトルオーバーレイ */
+.art-tile__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 200ms ease;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.art-tile:hover .art-tile__overlay {
+  opacity: 1;
+}
+
+.art-tile__text {
+  text-align: center;
+}
+
+.art-tile__title {
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-style: italic;
+  letter-spacing: 0.3px;
+  padding: 0px 0px;
+  text-align: center;
+}
+
+.art-tile__media {
+  color: white;
+  font-style: normal;
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-top: 4px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+
+.project-card-row {
+  min-height: 200px;         /* ← ここがカードの高さの基準 */
+  align-items: stretch;      /* ← これが超重要（高さ合わせ） */
+}
+
+.project-thumb {
+  position: relative;
+  width: 240px;     /* 横長カードの左サムネ幅 */
+  height: 100%;    /* ← ここで高さを固定！好きに調整 */
+  min-height: 170px; 
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+
+.project-thumb__img {
+  object-fit: cover;    /* 枠いっぱいに埋める（余白が出ない） */
+}
+
+.research-note {
+  text-align: left;
+}
