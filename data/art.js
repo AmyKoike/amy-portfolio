@@ -14,8 +14,12 @@ export const artProjects = [
     description: `
       Hop and Spark is ongoing animation project
     `,
+    process: null,
+    materials: null,
+    exhibition: null,
     year: 2025
   },
+
 
   //moss
   {
@@ -30,6 +34,9 @@ export const artProjects = [
     description: `
       Nature in Motion is a kinetic sculpture...
     `,
+    process: "hoge",
+    materials: "hoge",
+    exhibition: "hoge",
     year: 2025
   },
 
@@ -48,6 +55,9 @@ export const artProjects = [
       a waiting companion and emotional desk mate...
     `,
     video: "/videos/sprout_demo.mp4",
+    process: null,
+    materials: null,
+    exhibition: null,
     year: 2025
   },
   
@@ -66,6 +76,9 @@ export const artProjects = [
       a waiting companion and emotional desk mate...
     `,
     video: "/videos/sprout_demo.mp4",
+    process: null,
+    materials: null,
+    exhibition: null,
     year: 2025
   },
   
@@ -84,6 +97,9 @@ export const artProjects = [
       a waiting companion and emotional desk mate...
     `,
     video: "/videos/sprout_demo.mp4",
+    process: null,
+    materials: null,
+    exhibition: null,
     year: 2025
   },
 
@@ -102,6 +118,9 @@ export const artProjects = [
       a waiting companion and emotional desk mate...
     `,
     video: "/videos/sprout_demo.mp4",
+    process: null,
+    materials: null,
+    exhibition: null,
     year: 2025
   },
   
@@ -120,6 +139,9 @@ export const artProjects = [
       a waiting companion and emotional desk mate...
     `,
     video: "/videos/sprout_demo.mp4",
+    process: null,
+    materials: null,
+    exhibition: null,
     year: 2024
   },
 
@@ -138,6 +160,9 @@ export const artProjects = [
       a waiting companion and emotional desk mate...
     `,
     video: "/videos/sprout_demo.mp4",
+    process: null,
+    materials: null,
+    exhibition: null,
     year: 2024
   },
 
@@ -156,6 +181,9 @@ export const artProjects = [
       a waiting companion and emotional desk mate...
     `,
     video: "/videos/sprout_demo.mp4",
+    process: null,
+    materials: null,
+    exhibition: null,
     year: 2021
   }
 ];

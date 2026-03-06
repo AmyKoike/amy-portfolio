@@ -10,6 +10,7 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 
+import Carousel from "react-bootstrap/Carousel";
 import Image from "next/image";
 import { useState } from "react";
 import { notFound } from "next/navigation";
@@ -23,36 +24,57 @@ export default function ArtDetailPage({ params }) {
   const [index, setIndex] = useState(0);
 
   return (
-    <main className="container" style={{ paddingTop: '90px' }}>
-      <h1 className="mb-4">{project.title}</h1>
-      <p className="mb-4">{project.description}</p>
+    <main className="container" style={{ paddingTop: '120px' }}>
+      <h1 className="mb-3">{project.title} ({project.year})</h1>
 
-      <div className="row g-4">
+      <Carousel className="art-carousel mb-5"
+      interval={4000}
+      pause={false}>
+
         {project.images.map((img, i) => (
-          <div className="col-md-4" key={i}>
-            <Image
-              src={img}
-              alt=""
-              width={600}
-              height={800}
-              className="rounded shadow-sm w-100"
-              style={{ cursor: "pointer", height: "auto" }}
-              onClick={() => {
-                setIndex(i);
-                setOpen(true);
-              }}
-            />
-          </div>
-        ))}
-      </div>
+          <Carousel.Item key={i}>
 
-      <Lightbox
-        open={open}
-        close={() => setOpen(false)}
-        index={index}
-        slides={project.images.map((src) => ({ src }))}
-        plugins={[Thumbnails, Zoom]}
-      />
+            <div className="carousel-image-wrapper">
+              <Image
+                src={img}
+                alt={project.title}
+                fill
+                className="carousel-image"
+              />
+            </div>
+
+          </Carousel.Item>
+        ))}
+
+      </Carousel>
+
+      {project.description && (
+        <section className="art-detail-section">
+          <h2>Description</h2>
+          <p>{project.description}</p>
+        </section>
+      )}
+
+      {project.process && (
+        <section className="art-detail-section">
+          <h2>Process</h2>
+          <p>{project.process}</p>
+        </section>
+      )}
+
+      {project.materials && (
+        <section className="art-detail-section">
+          <h2>Materials</h2>
+          <p>{project.materials}</p>
+        </section>
+      )}
+
+      {project.exhibition && (
+        <section className="art-detail-section">
+          <h2>Exhibition</h2>
+          <p>{project.exhibition}</p>
+        </section>
+      )}
     </main>
   );
 }

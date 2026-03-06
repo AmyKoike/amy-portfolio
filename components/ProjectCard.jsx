@@ -47,6 +47,7 @@ export default function ProjectCard({ item }) {
                   <Button variant="outline-secondary" size="sm">PDF</Button>
                 </a>
               )}
+              
             </div>
 
           </Card.Body>

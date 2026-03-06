@@ -24,7 +24,7 @@ export default function HomePage() {
       <section className="container pt-1 pb-0" style={{ maxWidth: "800px" }}>
         <p className="artist-statement text-center">
           I want my robots to make people smile. <br />
-          I love seeing people’s eyes light up when they feel inspired, <br /> and I hope the things I create can spark moments of imagination and delight.
+          I love seeing people’s eyes light up when they feel inspired. <br /> I hope the things I create can spark moments of imagination and delight.
         </p>
       </section>
 
