@@ -22,59 +22,120 @@ export default function ArtDetailPage({ params }) {
 
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
+  const [previewOpen, setPreviewOpen] = useState(false);
+  const [previewIndex, setPreviewIndex] = useState(0);
 
   return (
-    <main className="container" style={{ paddingTop: '120px' }}>
-      <h1 className="mb-3">{project.title} ({project.year})</h1>
+    <>
+      <main style={{ paddingTop: "150px", paddingBottom: "40px" }}>
+      
+      <div className="art-container">
 
-      <Carousel className="art-carousel mb-5"
-      interval={4000}
-      pause={false}>
-
-        {project.images.map((img, i) => (
+      <Carousel className="art-carousel mb-5" interval={4000} pause={false}>
+        {project.images.map((item, i) => (
           <Carousel.Item key={i}>
-
-            <div className="carousel-image-wrapper">
-              <Image
-                src={img}
-                alt={project.title}
-                fill
-                className="carousel-image"
-              />
+            <div className="carousel-media-wrapper">
+              {item.type === "image" ? (
+                <Image
+                  src={item.src}
+                  alt={project.title}
+                  width={1200}
+                  height={800}
+                  className="carousel-media"
+                />
+              ) : (
+                <video
+                  className="carousel-media"
+                  controls
+                  autoPlay
+                  muted
+                  loop
+                >
+                  <source src={item.src} type="video/mp4" />
+                </video>
+              )}
             </div>
-
           </Carousel.Item>
         ))}
-
       </Carousel>
 
-      {project.description && (
+      {project.youtubeId && (
         <section className="art-detail-section">
-          <h2>Description</h2>
-          <p>{project.description}</p>
+          <div className="video-wrapper">
+            <iframe
+              src={`https://www.youtube.com/embed/${project.youtubeId}`}
+              title={`${project.title} video`}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
         </section>
       )}
 
-      {project.process && (
+      <h2 className="mt-3 mb-3">{project.title} ({project.year})</h2>
+
+      {project.description && (
         <section className="art-detail-section">
-          <h2>Process</h2>
-          <p>{project.process}</p>
+          <h3>Description</h3>
+          <p>{project.description}</p>
         </section>
       )}
 
       {project.materials && (
         <section className="art-detail-section">
-          <h2>Materials</h2>
+          <h3>Materials</h3>
           <p>{project.materials}</p>
         </section>
       )}
 
-      {project.exhibition && (
+
+      {project.process && (
         <section className="art-detail-section">
-          <h2>Exhibition</h2>
+          <h3>Process</h3>
+          <p>{project.process}</p>
+
+          {project.processImages && (
+            <div className="process-image-grid">
+              {project.processImages.map((img, i) => (
+                <button
+                  key={i}
+                  className="process-thumb-button"
+                  onClick={() => {
+                    setPreviewIndex(i);
+                    setPreviewOpen(true);
+                  }}
+                >
+                  <Image
+                    src={img}
+                    alt={`process ${i + 1}`}
+                    fill
+                    className="process-thumb-image"
+                  />
+                </button>
+              ))}
+            </div>
+          )}
+        </section>
+      )}
+
+
+      {project.exhibition && (
+        <section className="mt-3 art-detail-section">
+          <h3>Exhibition</h3>
           <p>{project.exhibition}</p>
         </section>
       )}
+
+      </div>
     </main>
+
+    <Lightbox
+      open={previewOpen}
+      close={() => setPreviewOpen(false)}
+      index={previewIndex}
+      slides={project.processImages.map((src) => ({ src }))}
+    />
+    </>
   );
 }
+
