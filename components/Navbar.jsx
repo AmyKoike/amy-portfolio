@@ -22,9 +22,9 @@ export default function CustomNavbar() {
 
   }, [isHome]);
 
-  useEffect(() => {
-  setExpanded(false);
-  }, [pathname]);
+  // useEffect(() => {
+  // setExpanded(false);
+  // }, [pathname]);
 
   const navbarClass = isHome
     ? (scrolled ? "nav-solid" : "nav-transparent")
@@ -43,7 +43,7 @@ export default function CustomNavbar() {
 
         <Navbar.Toggle 
           aria-controls="basic-navbar-nav" 
-          onClick={() => setExpanded(expanded ? false : true)}
+          onClick={() => setExpanded(!expanded)}
         />
 
         <Navbar.Collapse id="basic-navbar-nav">
