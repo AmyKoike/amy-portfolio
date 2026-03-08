@@ -7,7 +7,7 @@ export default function HomePage() {
       {/* --- Hero Section with Illustration --- */}
       <section
         className="d-flex justify-content-center"
-        style={{ paddingTop: "30px", marginBottom: "0px" }}>
+        style={{ paddingTop: "100px", marginBottom: "0px" }}>
         <Image
           src="/home/home.png"   // ← ここをパスに合わせて!
           alt="Amy Illustration"
