@@ -76,14 +76,13 @@ export default function ArtDetailPage({ params }) {
 
       {project.description && (
         <section className="art-detail-section">
-          <h3>Description</h3>
           <p>{project.description}</p>
         </section>
       )}
 
       {project.materials && (
         <section className="art-detail-section">
-          <h3>Materials</h3>
+          <h4>Materials</h4>
           <p>{project.materials}</p>
         </section>
       )}
@@ -91,7 +90,7 @@ export default function ArtDetailPage({ params }) {
 
       {project.process && (
         <section className="art-detail-section">
-          <h3>Process</h3>
+          <h4>Process</h4>
           <p>{project.process}</p>
 
           {project.processImages && (
@@ -121,7 +120,7 @@ export default function ArtDetailPage({ params }) {
 
       {project.exhibition && (
         <section className="mt-3 art-detail-section">
-          <h3>Exhibition</h3>
+          <h4>Exhibition</h4>
           <p>{project.exhibition}</p>
         </section>
       )}

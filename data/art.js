@@ -222,5 +222,29 @@ export const artProjects = [
     materials: null,
     exhibition: "FIKA, Koka Gallery, Tokyo, Japan",
     year: 2021
+  },
+
+  //mermaid
+  {
+    slug: "Syringe-worked-Mermaid",
+    title: "Syringe-worked Mermaid",
+    thumbnail: "/images/research/mermaid/swm_mat.png",
+    cover: "/images/research/mermaid/swm_mat.png",
+    images: [
+      {type: "image", src: "/images/research/mermaid/MAT_sym_3.jpg"},
+      {type:"image", src: "/images/research/mermaid/MAT_sym_2.jpg"},
+      {type: "image", src: "/images/research/mermaid/MAT_sym_4.jpg"},
+    ],
+    media: "media art",
+    description: `
+      Syringe-Worked Mermaid is a kinetic artwork exploring imbalance through a computationally designed form, where motion reveals the delicate tension between stability and instability. (Photo by Ippei Suzuki)
+    `,
+    video: null,
+    youtubeId: "_2pM0fOAWiY",
+    process: null,
+    processImages: [],
+    materials: null,
+    exhibition: "Media Ambition Tokyo 2017, Japanese Technium 2017",
+    year: 2016
   }
 ];
