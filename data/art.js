@@ -29,18 +29,23 @@ export const artProjects = [
     thumbnail: "/images/art/moss/moss_side.jpg",
     images: [
       { type: "image", src: "/images/art/moss/moss_side.jpg"},
-      { type: "image", src: "/images/art/moss/moss_front.jpg"}
+      { type: "image", src: "/images/art/moss/moss_front.jpg"},
+      { type: "image", src: "/images/art/moss/moss_child.jpeg"}
     ],
     media: "sculpture",
     description: `
       Nature in Motion is a kinetic sculpture project that explores how human–robot interaction can facilitate biophilic experiences and a sense of connection with nature.
       The installation invites people to sit and observe, offering a moment of focus, inspiration, and immersion that supports mental restoration. This was a collaborative project with Rachael Sheilds, and funded by Marie Christine Kohler Art Fellowship.
     `,
-    process: null,
+    process: "Collaborative project with Rachael Sheilds. I was responsible for structure and motion.",
     materials: "preserved moss (collected in Wisconsin and Michigan), aluminum extrusion structure, servo motors, microcomputer",
     exhibition: "2025 a2ru Conference: “Creative Futures: Driving Interdisciplinary Innovation Through the Arts”",
     processImages: [
-    "/images/art/moss/moss_side.jpg",
+      "/images/art/moss/process_1.jpeg",
+      "/images/art/moss/process_2.jpeg",
+      "/images/art/moss/process_3.jpeg",
+      "/images/art/moss/process_4.jpeg",
+      "/images/art/moss/process_5.jpeg"
     ],
     youtubeId: "78H8NdpsSdA",
     year: 2025
@@ -74,7 +79,8 @@ export const artProjects = [
       "/images/art/attachment/process_1.jpeg",
       "/images/art/attachment/process_2.jpeg",
       "/images/art/attachment/process_3.jpeg",
-      "/images/art/attachment/process_4.jpeg"
+      "/images/art/attachment/process_4.jpeg",
+      "/images/art/attachment/process_5.jpeg"
     ],
     materials: "Pine wood, plywood, fabric, cotton, baloon",
     exhibition: "Art Lofts Gallery, Madison USA, 2025",
@@ -86,7 +92,11 @@ export const artProjects = [
     slug: "oimodon-robot",
     title: "Oimodon",
     thumbnail: "/images/art/oimodon/oimodon.jpg",
-    images: [ {type: "image", src: "/images/art/oimodon/oimodon.jpg"}
+    images: [ 
+      {type: "image", src: "/images/art/oimodon/oimodon.jpg"},
+      {type: "image", src: "/images/art/oimodon/oimo-with-oimo.jpeg"},
+      {type: "image", src: "/images/art/oimodon/oimo-coverd.jpeg"},
+      {type: "image", src: "/images/art/oimodon/oimo-face.jpg"}
     ],
     media: "sculpture",
     description: `
@@ -99,20 +109,56 @@ export const artProjects = [
       The robot offers roasted sweet potatoes (yakiimo in Japanese), which are my favorite food. When I was a child, my grandmother would always prepare sweet potatoes for me whenever I visited her. Through Oimodon, I hope to share that same warmth and joy with others.   
     `,
     video: "/videos/sprout_demo.mp4",
-    process: null,
-    processImages: [],
+    process: "wood working, plaster, coloring",
+    processImages: [
+      "/images/art/oimodon/process-1.jpeg",
+      "/images/art/oimodon/process-2.jpeg",
+      "/images/art/oimodon/process-3.jpeg",
+      "/images/art/oimodon/process-4.jpeg",
+      "/images/art/oimodon/process-5.jpeg",
+      "/images/art/oimodon/process-6.jpeg",
+      "/images/art/oimodon/process-7.jpeg",
+      "/images/art/oimodon/process-8.jpeg",
+      "/images/art/oimodon/process-9.jpeg",
+      "/images/art/oimodon/process-10.jpeg",
+      "/images/art/oimodon/process-11.jpeg",
+      "/images/art/oimodon/process-12.jpeg",
+      "/images/art/oimodon/process-13.jpeg"
+    ],
     materials: null,
     exhibition: null,
     year: 2025
   },
   
+  //foot
+  {
+    slug: "big-foot",
+    title: "Untitled",
+    thumbnail: "/images/art/foot/foot.jpeg",
+    images: [ 
+      {type: "image", src: "/images/art/foot/foot.jpeg"},
+      {type: "image", src: "/images/art/foot/foot-2.jpeg"}
+    ],
+    media: "outdoor installation",
+    description: `
+    `,
+    video: "/videos/sprout_demo.mp4",
+    process: " ",
+    processImages: ["/images/art/foot/process-1.jpeg"],
+    materials: null,
+    exhibition: "Humanities Building",
+    year: 2025
+  },
+
   //untie
   {
     slug: "to-untie",
     title: "To Untie",
     thumbnail: "/images/art/untie/untie.jpg",
     images: [ 
-      {type: "image", src: "/images/art/untie/untie.jpg"}
+      {type: "image", src: "/images/art/untie/untie.jpg"},
+      {type: "image", src: "/images/art/untie/untie-yoko.jpeg"},
+      {type: "image", src: "/images/art/untie/untie-front.jpeg"}
     ],
     media: "sculpture",
     description: `
@@ -125,8 +171,14 @@ export const artProjects = [
       By carving these worn boots in wood, I reflect on this process of adaptation. Just as the shoes slowly loosened through years of wear, I realized that my own tension had also begun to untie.
     `,
     video: "/videos/sprout_demo.mp4",
-    process: null,
-    processImages: [],
+    process: "started with clay maquette, then curved bass wood",
+    processImages: [
+      "/images/art/untie/process-1.jpeg",
+      "/images/art/untie/process-2.jpeg",
+      "/images/art/untie/process-3.jpeg",
+      "/images/art/untie/process-4.jpeg",
+      "/images/art/untie/process-5.jpeg",
+    ],
     materials: null,
     exhibition: null,
     year: 2025
@@ -138,7 +190,8 @@ export const artProjects = [
     title: "Hard to Blend",
     thumbnail: "/images/art/hard_to_blend/hard_to_blend.jpg",
     images: [
-      {type: "image", src: "/images/art/hard_to_blend/hard_to_blend.jpg"}
+      {type: "image", src: "/images/art/hard_to_blend/hard_to_blend_1.jpg"},
+      {type: "image", src: "/images/art/hard_to_blend/hard_to_blend_2.jpeg"}
     ],
     media: "sculpture",
     description: `
