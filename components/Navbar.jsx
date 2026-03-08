@@ -42,7 +42,7 @@ export default function CustomNavbar() {
             <Link href="/">home</Link>
             <Link href="/research">research</Link>
             <Link href="/art">art work</Link>
-            <Link href="/blog">blog</Link>
+            <Link href="/blog">photo essay</Link>
             <Link href="/about">about me</Link>
           </Nav>
         </Navbar.Collapse>

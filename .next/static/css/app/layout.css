@@ -621,3 +621,72 @@ h1, h2, h3, h4 {
     grid-template-columns: 1fr;
   }
 }
+
+.blog-intro {
+  color: #666;
+  max-width: 680px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 24px;
+  gap: 24px;
+}
+
+.blog-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-card-image-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #f3f3f3;
+}
+
+.blog-card-image {
+  object-fit: cover;
+  transition: transform 0.25s ease;
+}
+
+.blog-card:hover .blog-card-image {
+  transform: scale(1.02);
+}
+
+.blog-card-body {
+  padding-top: 12px;
+}
+
+.blog-card-date {
+  font-size: 0.8rem;
+  color: #777;
+  margin-bottom: 6px;
+}
+
+.blog-card-title {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.blog-card-excerpt {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.blog-card-link {
+  font-size: 0.9rem;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
