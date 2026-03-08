@@ -54,6 +54,17 @@ export default function ResearchDetailPage({ params }) {
           {project.description}
         </p>
 
+        {project.youtubeId && (
+          <div className="video-wrapper">
+            <iframe
+              src={`https://www.youtube.com/embed/${project.youtubeId}`}
+              title={`${project.title} video`}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+      )}
+
         {/* PDF button */}
         {project.pdf && (
           <a href={project.pdf} target="_blank">
