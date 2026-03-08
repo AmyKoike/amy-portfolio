@@ -71,7 +71,7 @@ export const researchProjects = [
       "/images/art/sample2.jpg",
       "/images/art/sample3.jpg",
     ],
-    pdf: "/pdf/ContextAwareRobotVoiceDesign.pdf",
+    pdf: "/pdf/What You Reward Is What You Learn.pdf",
     description: `
       Designing policies that are both efficient and acceptable for conversational service robots in open and diverse environments is non-trivial. Unlike fixed, hand-tuned parameters, online learning can adapt to non-stationary conditions. In this paper, we study how to adapt a social robot’s speech policy in the wild. During a 12-day in-situ deployment with over 1,400 public encounters, we cast online policy optimization as a multi-armed bandit problem and use Thompson sampling to select among six actions defined by speech rate (slow/normal/fast) and verbosity (concise/detailed). We compare three complementary binary rewards--user rating, conversation closure, and turn counts--and show that each induces distinct arm distributions and interaction behaviors. We complement the online results with offline evaluations that analyze contextual factors (e.g., crowd level, group size) using video-annotated data. Taken together, we distill ready-to-use design lessons for deploying online optimization of speech policies in real public HRI settings.
     `,
