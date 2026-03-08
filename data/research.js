@@ -16,8 +16,8 @@ export const researchProjects = [
     thumbnail: "/images/research/morph/designwithMEB.jpg",
     cover: "/images/research/morph/ERM_teaser.png",
     images: [
-      "/images/art/morph/designwithMEB.jpg",
-      "/images/art/sample3.jpg",
+      {type:"image", src: "/images/art/morph/designwithMEB.jpg"},
+      {type:"image", src: "/images/art/sample3.jpg"}
     ],
     pdf: "/pdf/RobotMorphology.pdf",
     youtubeId: null,
@@ -42,8 +42,8 @@ export const researchProjects = [
     thumbnail: "/images/research/voiceparameters/Sota.jpg",
     cover: "/images/research/voiceparameters/Sota.jpg", 
     images: [
-      "/images/art/sample2.jpg",
-      "/images/art/sample3.jpg",
+      {type:"image", src: "/images/art/sample2.jpg"},
+      {type:"image", src: "/images/art/sample3.jpg"}
     ],
     pdf: "/pdf/ContextAwareRobotVoiceDesign.pdf",
     youtubeId: null,
@@ -70,8 +70,8 @@ export const researchProjects = [
     thumbnail: "/images/research/bandit/system_revised.png",
     cover: "/images/research/bandit/system_revised.png",
     images: [
-      "/images/art/sample2.jpg",
-      "/images/art/sample3.jpg",
+      {type:"image", src: "/images/art/sample2.jpg"},
+      {type:"image", src: "/images/art/sample3.jpg"}
     ],
     pdf: "/pdf/What You Reward Is What You Learn.pdf",
     youtubeId: null,
@@ -96,8 +96,8 @@ export const researchProjects = [
     thumbnail: "/images/research/sprout/Sprout.png",
     cover: "/images/research/sprout/Sprout.png", 
     images: [
-      "/images/art/sample2.jpg",
-      "/images/art/sample3.jpg",
+      {type:"image", src: "/images/art/sample2.jpg"},
+      {type:"image", src: "/images/art/sample3.jpg"}
     ],
     youtubeId:"AikTM0-jSkk",
     pdf: "/pdf/Sprout-HRI.pdf",
@@ -122,8 +122,8 @@ export const researchProjects = [
     thumbnail: "/images/research/task/TaSK-thumbnail.png",
     cover: "/images/research/task/TaSK-teaser.png",
     images: [
-      "/images/art/sample2.jpg",
-      "/images/art/sample3.jpg",
+      {type:"image", src: "/images/art/sample2.jpg"},
+      {type:"image", src: "/images/art/sample3.jpg"}
     ],
     youtubeId:"WkKKL-dVqtQ",
     pdf: "/pdf/Tangible-Scenography-Kit.pdf",
@@ -149,8 +149,8 @@ export const researchProjects = [
     thumbnail: "/images/research/usermotivation/Teaser.png",
     cover: "/images/research/usermotivation/Teaser.png",
     images: [
-      "/images/art/sample2.jpg",
-      "/images/art/sample3.jpg",
+      {type:"image", src: "/images/art/sample2.jpg"},
+      {type:"image", src: "/images/art/sample3.jpg"}
     ],
     youtubeId: null,
     pdf: "/pdf/What-Drives-You-to-Interact.pdf",
@@ -174,8 +174,8 @@ export const researchProjects = [
     thumbnail: "/images/research/manpu/manpu.png",
     cover: "/images/research/manpu/manpu.png",
     images: [
-      "/images/art/sample2.jpg",
-      "/images/art/sample3.jpg",
+      {type:"image", src: "/images/art/sample2.jpg"},
+      {type:"image", src: "/images/art/sample3.jpg"}
     ],
     youtubeId:"hWeX5Mv8nYA",
     pdf: "/pdf/Manpu.pdf",
@@ -202,8 +202,8 @@ export const researchProjects = [
     thumbnail: "/images/research/mermaid/swm_mat.png",
     cover: "/images/research/mermaid/swm_mat.png",
     images: [
-      "/images/art/sample2.jpg",
-      "/images/art/sample3.jpg",
+      {type:"image", src: "/images/art/sample2.jpg"},
+      {type:"image", src: "/images/art/sample3.jpg"}
     ],
     pdf: "/pdf/Mermaid.pdf",
     youtubeId:null,
@@ -231,8 +231,8 @@ export const researchProjects = [
     thumbnail: "/images/research/yadori/transform_key.jpg",
     cover: "/images/research/yadori/transform_key.jpg",
     images: [
-      "/images/art/sample2.jpg",
-      "/images/art/sample3.jpg",
+      {type:"image", src: "/images/art/sample2.jpg"},
+      {type:"image", src: "/images/art/sample3.jpg"}
     ],
     pdf: "/pdf/You-as-Puppet.pdf",
     youtubeId:"MRy5pgXY8es",
@@ -258,8 +258,8 @@ export const researchProjects = [
     thumbnail: "/images/research/sonovortex/sonovortex.jpg",
     cover: "/images/research/sonovortex/sonovortex.jpg",
     images: [
-      "/images/art/sample2.jpg",
-      "/images/art/sample3.jpg",
+      {type:"image", src: "/images/art/sample2.jpg"},
+      {type:"image", src: "/images/art/sample3.jpg"}
     ],
     pdf: "/pdf/Sonovortex.pdf",
     youtubeId:null,
@@ -285,8 +285,8 @@ export const researchProjects = [
     thumbnail: "/images/research/crossfieldhaptics/crossfieldhaptics.jpg",
     cover: "/images/research/crossfieldhaptics/crossfieldhaptics.jpg",
     images: [
-      "/images/art/sample2.jpg",
-      "/images/art/sample3.jpg",
+      {type:"image", src: "/images/art/sample2.jpg"},
+      {type:"image", src: "/images/art/sample3.jpg"}
     ],
     youtubeId: null,
     pdf: "/pdf/Cross-Field-Haptics.pdf",
@@ -296,5 +296,5 @@ export const researchProjects = [
     process: null,
     processImages: [],
     year: 2016
-  },
+  }
 ];

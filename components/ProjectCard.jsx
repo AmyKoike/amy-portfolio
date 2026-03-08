@@ -5,15 +5,14 @@ import { Card, Button, Row, Col } from "react-bootstrap";
 
 export default function ProjectCard({ item }) {
   return (
-    <Card className="col-md-12 shadow-sm mb-4 hover-card h-100" style={{ borderRadius: "0px" }}>
-      <Row className="g-0 h-100">
+    <Card className="shadow-sm mb-4 hover-card h-100" style={{ borderRadius: "0px" }}>
+      <Row className="g-0 h-100 project-card-row">
         
         {/* image on the left */}
-        <Col md={4} className="h-100">
+        <Col md={4} className="project-card-image-col">
           <Card.Img
             src={item.image}
             className="h-100 w-100"
-            fill
             sizes="180px"
             style={{ objectFit: "cover", 
                      borderTopLeftRadius: "0px",

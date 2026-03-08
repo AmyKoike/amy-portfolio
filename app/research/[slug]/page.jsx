@@ -1,4 +1,7 @@
+"use client";
+
 import { researchProjects } from "@/data/research";
+import Carousel from "react-bootstrap/Carousel";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import Container from "react-bootstrap/Container";
@@ -7,9 +10,8 @@ import Button from "react-bootstrap/Button";
 
 export default function ResearchDetailPage({ params }) {
   const { slug } = params;
-
   // find a project that matches slug 
-  const project = researchProjects.find((p) => p.slug === slug);
+  const project = researchProjects.find((p) => p.slug === params.slug);
 
   if (!project) return notFound();
 
@@ -35,7 +37,6 @@ export default function ResearchDetailPage({ params }) {
           ))}
         </p>
 
-
         {/* year */}
         <p className="text-muted mb-4">{project.year}</p>
 
@@ -48,6 +49,34 @@ export default function ResearchDetailPage({ params }) {
           className="w-100 h-50"
           style={{ objectFit: "cover" }}
         />
+
+        {/* <Carousel className="art-carousel mb-2" interval={4000} pause={false}>
+        {project.images.map((item, i) => (
+          <Carousel.Item key={i}>
+            <div className="carousel-media-wrapper">
+              {item.type === "image" ? (
+                <Image
+                  src={item.src}
+                  alt={project.title}
+                  width={1200}
+                  height={800}
+                  className="carousel-media"
+                />
+              ) : (
+                <video
+                  className="carousel-media"
+                  controls
+                  autoPlay
+                  muted
+                  loop
+                >
+                  <source src={item.src} type="video/mp4" />
+                </video>
+              )}
+            </div>
+          </Carousel.Item>
+        ))}
+      </Carousel> */}
 
         {/* description */}
         <p className="leading-relaxed" style={{ whiteSpace: "pre-line" }}>

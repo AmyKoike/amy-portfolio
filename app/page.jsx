@@ -16,7 +16,10 @@ export default function HomePage() {
           priority
           style={{
             objectFit: "contain",
-            display: "block"
+            display: "block",
+            width: "100%",
+            maxWidth: "420px",
+            height: "auto"
           }}
         />
       </section>
