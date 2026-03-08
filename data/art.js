@@ -188,7 +188,7 @@ export const artProjects = [
     {
     slug: "hard-to-unblend",
     title: "Hard to Blend",
-    thumbnail: "/images/art/hard_to_blend/hard_to_blend.jpg",
+    thumbnail: "/images/art/hard_to_blend/hard_to_blend_1.jpg",
     images: [
       {type: "image", src: "/images/art/hard_to_blend/hard_to_blend_1.jpg"},
       {type: "image", src: "/images/art/hard_to_blend/hard_to_blend_2.jpeg"}
