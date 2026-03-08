@@ -11,6 +11,7 @@ export default function CustomNavbar() {
   const isHome = pathname === "/";
 
   const [scrolled, setScrolled] = useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
     if (!isHome) return;
@@ -21,6 +22,10 @@ export default function CustomNavbar() {
 
   }, [isHome]);
 
+  useEffect(() => {
+  setExpanded(false);
+  }, [pathname]);
+
   const navbarClass = isHome
     ? (scrolled ? "nav-solid" : "nav-transparent")
     : "nav-solid";
@@ -30,20 +35,24 @@ export default function CustomNavbar() {
       expand="lg"
       fixed="top"
       className={navbarClass}
+      expanded={expanded}
       style={{ width: "100%", zIndex: 50 }}
     >
       <div className="container d-flex flex-column align-items-center py-2">
         <Navbar.Brand href="/" className="fw-bold mb-2 text-center">amy koike</Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle 
+          aria-controls="basic-navbar-nav" 
+          onClick={() => setExpanded(expanded ? false : true)}
+        />
 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="d-flex gap-4 justify-content-center">
-            <Link href="/">home</Link>
-            <Link href="/research">research</Link>
-            <Link href="/art">art work</Link>
-            <Link href="/blog">photo essay</Link>
-            <Link href="/about">about me</Link>
+            <Link href="/"　onClick={() => setExpanded(false)}>home</Link>
+            <Link href="/research"　onClick={() => setExpanded(false)}>research</Link>
+            <Link href="/art"　onClick={() => setExpanded(false)}>art work</Link>
+            <Link href="/blog"　onClick={() => setExpanded(false)}>photo essay</Link>
+            <Link href="/about"　onClick={() => setExpanded(false)}>about me</Link>
           </Nav>
         </Navbar.Collapse>
       </div>
