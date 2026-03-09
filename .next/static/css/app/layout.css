@@ -475,6 +475,14 @@ h1, h2, h3, h4 {
   display: block;
 }
 
+.art-carousel .carousel-indicators button {
+  background-color: #888;   /* 通常のバー */
+}
+
+.art-carousel .carousel-indicators .active {
+  background-color: #ce3c0f; /* 今表示しているバー */
+}
+
 .process-image-wrapper {
   width: 100%;
   height: 350px;   /* ← 全部この高さに揃える */
