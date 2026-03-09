@@ -212,64 +212,25 @@
 
 body {
   /* padding-top: var(--navbar-height); */
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
   background-image: radial-gradient(#e0e0e0 1px, transparent 1px);
   background-size: 4px 4px;
   font-family: var(--font-inter), sans-serif;
-  background-color: #fafafa;
-  color: #222;
+  /* background-color: #fafafa; */
+  color: #2e2e2e;
 }
 
 .page-content {
   padding-top: var(--navbar-height);
 }
 
-/* スクロール前：透明ナビ */
-/* .nav-transparent {
-  background-color: transparent !important;
-  box-shadow: none !important;
-  color: white !important;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-} */
-
-.nav-transparent a {
-  color: black;
-  /* color: white !important; */
-}
-
 /* スクロール後：白背景ナビ */
 .nav-solid {
-  background-color: rgba(255, 255, 255, 0.96) !important;
+  background-color: rgba(255, 255, 255, 0) !important;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.nav-solid a {
-  color: black !important;
-}
-
-
-.transparent-nav {
-  background-color: transparent !important;
-  -webkit-backdrop-filter: none !important;
-          backdrop-filter: none !important;
-  box-shadow: none !important;
-  transition: background-color 0.3s ease;
-}
-
-.transparent-nav a {
-  color: white !important;
-}
-
-.nav-overlay {
-  background-color: transparent !important;
-  box-shadow: none !important;
-}
-
-.nav-overlay a {
-  color: white !important; /* ← カルーセルの上で見えやすくする */
 }
 
 h1, h2, h3, h4 {
@@ -281,11 +242,6 @@ h1, h2, h3, h4 {
 .hover-card {
   transition: all 0.25s ease;
   cursor: pointer;
-}
-
-.hover-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 20px rgba(0,0,0,0.18);
 }
 
 .masonry-grid {
@@ -304,62 +260,6 @@ h1, h2, h3, h4 {
   margin-bottom: 0;
 }
 
-/* ホームのナビ（カルーセル上に重ねる） */
-.navbar-hero {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 20;
-  background: white;
-  color: black;
-}
-
-/* それ以外のページのナビ（通常の固定ナビ） */
-.navbar-default {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 20;
-  background: white;
-  color: black;
-  border-bottom: 1px solid #eee;
-}
-
-.btn {
-  border-radius: 0px !important;   /* ← 完全に角を削る */
-}
-
-/* 好みで */
-.btn-round {
-  border-radius: 20px !important;  /* 丸い pill-style ボタン */
-}
-
-.hero-section {
-  position: relative;
-  height: 50vh;     /* ← これが全てのベース */
-  overflow: hidden;
-  /* background: red;  ← debug 用。後で消してOK */
-}
-
-.hero-slide {
-  position: relative; 
-  width: 100%;
-  height: 100%;
-}
-
-/* Hero テキスト */
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
-.hero-section {
-  background: #fafafa; /* or #fafafa で優しい雰囲気に */
-}
-
 .artist-statement {
   margin-top: 0;
   font-size: 1.2rem;
@@ -369,8 +269,8 @@ h1, h2, h3, h4 {
   
 }
 
-.hero-section img {
-  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.1));
+.btn {
+  border-radius: 0px !important;   /* ← 完全に角を削る */
 }
 
 /* --- Art grid (square tiles) --- */
@@ -437,7 +337,7 @@ h1, h2, h3, h4 {
 }
 
 .art-tile__title {
-  color: white;
+  color: rgb(223, 223, 223);
   font-weight: 500;
   font-size: 1.2rem;
   font-style: italic;
@@ -447,7 +347,7 @@ h1, h2, h3, h4 {
 }
 
 .art-tile__media {
-  color: white;
+  color: rgb(223, 223, 223);
   font-style: normal;
   font-size: 1rem;
   opacity: 0.8;
@@ -455,7 +355,6 @@ h1, h2, h3, h4 {
   letter-spacing: 0.5px;
   text-align: center;
 }
-
 
 .project-card-row {
   min-height: 200px;         /* ← ここがカードの高さの基準 */

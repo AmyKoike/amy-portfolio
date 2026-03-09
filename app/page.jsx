@@ -1,7 +1,10 @@
 import Image from "next/image";
 
+
+
 export default function HomePage() {
   return (
+
     <main>
 
       {/* --- Hero Section with Illustration --- */}
@@ -30,7 +33,10 @@ export default function HomePage() {
           I love seeing people’s eyes light up when they feel inspired. <br /> I hope the things I create can spark moments of imagination and delight.
         </p>
       </section>
-
     </main>
+
+    
+
+
   );
 }

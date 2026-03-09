@@ -26,6 +26,7 @@ export default function ResearchPage() {
         href="https://scholar.google.com/citations?user=TAFiQBMAAAAJ&hl=en"
         target="_blank"
         rel="noopener noreferrer"
+        className ="text-muted"
       >
         Google Scholar page
       </a>.

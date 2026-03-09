@@ -27,7 +27,7 @@ export default function CustomNavbar() {
   // }, [pathname]);
 
   const navbarClass = isHome
-    ? (scrolled ? "nav-solid" : "nav-transparent")
+    ? (scrolled ? "nav-transparent" : "nav-transparent")
     : "nav-solid";
 
   return (
@@ -38,7 +38,7 @@ export default function CustomNavbar() {
       expanded={expanded}
       style={{ width: "100%", zIndex: 50 }}
     >
-      <div className="container d-flex flex-column align-items-center py-2">
+      <div className="container d-flex flex-column align-items-center py-2 ">
         <Navbar.Brand href="/" className="fw-bold mb-2 text-center">amy koike</Navbar.Brand>
 
         <Navbar.Toggle 
@@ -48,11 +48,11 @@ export default function CustomNavbar() {
 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="d-flex gap-4 justify-content-center">
-            <Link href="/"　onClick={() => setExpanded(false)}>home</Link>
-            <Link href="/research"　onClick={() => setExpanded(false)}>research</Link>
-            <Link href="/art"　onClick={() => setExpanded(false)}>art work</Link>
-            <Link href="/blog"　onClick={() => setExpanded(false)}>photo essay</Link>
-            <Link href="/about"　onClick={() => setExpanded(false)}>about me</Link>
+            <Link href="/"　className="text-muted" onClick={() => setExpanded(false)}>home</Link>
+            <Link href="/research"　className="text-muted" onClick={() => setExpanded(false)}>research</Link>
+            <Link href="/art"　className="text-muted" onClick={() => setExpanded(false)}>art work</Link>
+            <Link href="/blog"　className="text-muted" onClick={() => setExpanded(false)}>photo essay</Link>
+            <Link href="/about"　className="text-muted" onClick={() => setExpanded(false)}>about me</Link>
           </Nav>
         </Navbar.Collapse>
       </div>

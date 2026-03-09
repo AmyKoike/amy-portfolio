@@ -5,7 +5,10 @@ import { Card, Button, Row, Col } from "react-bootstrap";
 
 export default function ProjectCard({ item }) {
   return (
-    <Card className="shadow-sm mb-4 hover-card h-100" style={{ borderRadius: "0px" }}>
+    <Card 
+      className="shadow-sm mb-4 hover-card h-100"
+      onClick={() => window.location.href = `/research/${item.slug}`}
+      style={{ borderRadius: "0px" }}>
       <Row className="g-0 h-100 project-card-row">
         
         {/* image on the left */}
@@ -38,12 +41,12 @@ export default function ProjectCard({ item }) {
             <div className="mt-auto d-flex gap-2">
               {/* <Link href={`/${item.type}/${item.slug}`}> */}
               <Link href={`/research/${item.slug}`}>
-                <Button variant="outline-primary" size="sm">Learn More</Button>
+                <Button variant="outline-info" size="sm">Learn More</Button>
               </Link>
 
               {item.pdf && (
                 <a href={item.pdf} target="_blank">
-                  <Button variant="outline-secondary" size="sm">PDF</Button>
+                  <Button variant="outline-warning" size="sm">PDF</Button>
                 </a>
               )}
               
