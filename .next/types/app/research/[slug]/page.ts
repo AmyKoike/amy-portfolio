@@ -1,8 +1,8 @@
-// File: /Users/amykoike/Library/CloudStorage/Dropbox/amy_portfolio_starter/app/art/page.jsx
-import * as entry from '../../../../app/art/page.js'
+// File: /Users/amykoike/Library/CloudStorage/Dropbox/amy_portfolio_starter/app/research/[slug]/page.jsx
+import * as entry from '../../../../../app/research/[slug]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../app/art/page.js')
+type TEntry = typeof import('../../../../../app/research/[slug]/page.js')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{

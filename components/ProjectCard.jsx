@@ -45,7 +45,12 @@ export default function ProjectCard({ item }) {
               </Link>
 
               {item.pdf && (
-                <a href={item.pdf} target="_blank">
+                <a 
+                  href={item.pdf} 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                >
                   <Button variant="outline-warning" size="sm">PDF</Button>
                 </a>
               )}
