@@ -53,8 +53,7 @@ export default function ProjectCard({ item }) {
                 >
                   <Button variant="outline-warning" size="sm">PDF</Button>
                 </a>
-              )}
-              
+              )}              
             </div>
 
           </Card.Body>

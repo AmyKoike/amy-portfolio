@@ -6,6 +6,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
+import ButtonToolbar from "react-bootstrap/Button";
 
 
 export default function ResearchDetailPage({ params }) {
@@ -49,6 +50,8 @@ export default function ResearchDetailPage({ params }) {
           className="w-100 h-50"
           style={{ objectFit: "cover" }}
         />
+
+
 
         {/* <Carousel className="art-carousel mb-2" interval={4000} pause={false}>
         {project.images.map((item, i) => (
@@ -94,10 +97,16 @@ export default function ResearchDetailPage({ params }) {
           </div>
       )}
 
-        {/* PDF button */}
+      {/* PDF button */}
         {project.pdf && (
           <a href={project.pdf} target="_blank">
-            <Button variant="outline-primary" className="mt-3">Open PDF</Button>
+            <Button  size="sm" variant="outline-primary" className="me-2">PDF</Button>
+          </a>
+        )}
+
+        {project.github && (
+          <a href={project.github} target="_blank">
+            <Button  size="sm" variant="outline-primary"> Github</Button>
           </a>
         )}
 
