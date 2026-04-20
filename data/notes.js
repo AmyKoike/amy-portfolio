@@ -1,5 +1,33 @@
 export const notes = [
   {
+    slug: "was-gold",
+    title: "きんいろだった",
+    date: "2026-04-18",
+    image: "/images/note/was-gold.jpeg",
+    url: "https://note.com/super83/n/n657b81be4f7f",
+  },
+  {
+    slug: "wet-wave-way",
+    title: "うるおい　波　運び",
+    date: "2026-04-18",
+    image: "/images/note/wet-wave-way.jpeg",
+    url: "https://note.com/super83/n/nffd4e1b588df",
+  },
+  {
+    slug: "fav-in-kitakyushu",
+    title: "北九州でのおきにいり",
+    date: "2026-04-18",
+    image: "/images/note/fav-in-kitakyushu.jpeg",
+    url: "https://note.com/super83/n/n6900ab4fc0e1",
+  },
+  {
+    slug: "packed-edinburgh",
+    title: "ぎゅうぎゅうエディンバラ",
+    date: "2026-04-02",
+    image: "/images/note/packed-edinburgh.jpeg",
+    url: "https://note.com/super83/n/n6ff77773eb14",
+  },
+  {
     slug: "shitamachi-snap",
     title: "下町スナップ",
     date: "2026-02-02",
