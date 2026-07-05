@@ -16,10 +16,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/research/page.js"
     ],
-    "/research/[slug]/page": [
+    "/art/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/research/[slug]/page.js"
+      "static/chunks/app/art/page.js"
     ]
   }
 }
