@@ -1,8 +1,3 @@
-"use client";
-
-import dynamic from "next/dynamic";
-const Masonry = dynamic(() => import("react-masonry-css"), { ssr: false });
-
 import ArtTile from "@/components/ArtTile";
 import { artProjects } from "@/data/art";
 
@@ -19,4 +14,3 @@ export default function ArtPage() {
     </main>
   );
 }
-

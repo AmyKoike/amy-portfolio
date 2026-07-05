@@ -1,16 +1,13 @@
 "use client";
 
 import { researchProjects } from "@/data/research";
-import Carousel from "react-bootstrap/Carousel";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-import ButtonToolbar from "react-bootstrap/Button";
 
 
 export default function ResearchDetailPage({ params }) {
-  const { slug } = params;
   // find a project that matches slug 
   const project = researchProjects.find((p) => p.slug === params.slug);
 

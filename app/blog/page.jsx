@@ -32,7 +32,7 @@ export default function BlogPage() {
             <div className="blog-card-image-wrap">
               <Image
                 src={post.image}
-                // alt={post.title}
+                alt={post.title}
                 fill
                 className="blog-card-image"
                 sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"

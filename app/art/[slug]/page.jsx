@@ -5,11 +5,6 @@ import { artProjects } from "@/data/art";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
-import "yet-another-react-lightbox/plugins/thumbnails.css";
-
-import Zoom from "yet-another-react-lightbox/plugins/zoom";
-
 import Carousel from "react-bootstrap/Carousel";
 import Image from "next/image";
 import { useState } from "react";
@@ -18,12 +13,10 @@ import { notFound } from "next/navigation";
 export default function ArtDetailPage({ params }) {
   const project = artProjects.find((p) => p.slug === params.slug);
 
-  if (!project) return notFound();
-
-  const [open, setOpen] = useState(false);
-  const [index, setIndex] = useState(0);
   const [previewOpen, setPreviewOpen] = useState(false);
   const [previewIndex, setPreviewIndex] = useState(0);
+
+  if (!project) return notFound();
 
   return (
     <>
@@ -137,4 +130,3 @@ export default function ArtDetailPage({ params }) {
     </>
   );
 }
-
